@@ -1,0 +1,18 @@
+
+
+
+<div class="card" style="width: 30%;display: inline-block;margin: 1%;" *ngFor="let event of events" >
+  <img class="card-img-top" src ="https://via.placeholder.com/150 "alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{event.name}}</h5>
+    <p class="card-text">{{event.description}}</p>
+    
+    <a  class="btn btn-primary" (click)="show()">Book Now</a>
+
+    <div class="card-footer text-muted">
+    From :  {{event.from_date.split(" ")[0]}}  To :  {{event.to_date.split(" ")[0]}}
+    </div>
+  </div>
+</div>
+<!-- Button trigger modal -->
+
